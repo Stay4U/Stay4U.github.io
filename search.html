@@ -11,7 +11,7 @@
 
 
 
-    <title>Spring - Technical Blog</title>
+    <title>Search Result</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -51,19 +51,19 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="IT 기술 블로그" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon-zero.ico" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/tag/spring/" />
+    <link rel="canonical" href="http://localhost:4000/search" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Technical Blog" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Spring - Technical Blog" />
+    <meta property="og:title" content="Search Result" />
     <meta property="og:description" content="IT 기술 블로그" />
-    <meta property="og:url" content="http://localhost:4000/tag/spring/" />
+    <meta property="og:url" content="http://localhost:4000/search" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/cover-coffee_and_book.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Spring - Technical Blog" />
+    <meta name="twitter:title" content="Search Result" />
     <meta name="twitter:description" content="IT 기술 블로그" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/cover-coffee_and_book.jpg" />
@@ -83,7 +83,7 @@
         "name": "Technical Blog",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/tag/spring/",
+    "url": "http://localhost:4000/search",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/assets/built/images/cover-coffee_and_book.jpg",
@@ -92,7 +92,7 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/tag/spring/"
+        "@id": "http://localhost:4000/search"
     },
     "description": "IT 기술 블로그"
 }
@@ -107,24 +107,20 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Tag Page" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Search Result" href="/feed.xml" />
 
 
 </head>
-<body class="tag-template">
+<body class="page-template">
 
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- default -->
-<!-- The tag above means - insert everything in this file into the {body} of the default.hbs template -->
+        <!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
-<!-- #tag -->
-<!-- dynamically loading backgrounds for tags,  descriptions and page titles -->
-
-
-
-<header class="site-header outer " style="background-image: url(/assets/built/images/tag-background-school_spring.png) ">
+<header class="site-header outer">
     <div class="inner">
         <nav class="site-nav">
     <div class="site-nav-left">
@@ -159,134 +155,82 @@
     </div>
 </nav>
 
-        <div class="site-header-content">
-            <h1 class="site-title">Spring</h1>
-            <h2 class="site-description">
-                
-    			    A collection of 2 posts
-                
-            </h2>
-        </div>
     </div>
 </header>
-<!-- tag -->
 
-<!-- The main content area -->
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
-        <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+
+        <article class="post-full  post page no-image">
+
+            <header class="post-full-header">
+                <h1 class="post-full-title">Search Result</h1>
+            </header>
+
             
 
+            <section class="post-full-content">
+                <form action="/search" method="get" hidden="hidden">
+    <label for="search-box"></label>
+    <input type="text" id="search-box" name="query">
+</form>
 
-    <article class="post-card tag-template">
-        
-            <a class="post-card-image-link" href="/spring-second">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/post-background-animal_chara_radio_penguin.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/spring-second">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Spring</span>
-                            
-                        
-                    
+<ul class="mylist" id="search-results"></ul>
 
-                    <h2 class="post-card-title">Spring 강좌(2) - Spring 제어문</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>Spring 강좌는 여러 절로 구성되어 있습니다. 
+<script>
+    window.store = {
+    
+    "troubleshoot-1": {
+        "title": "Python 강좌(1) - Python 기본",
+            "author": "BigZero",
+            "category": "",
+            "content": "Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.But, in a larger sense, we can not dedicate-we can not consecrate-we can not hallow-this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us-that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion-that we here highly resolve that these dead shall not have died in vain-that this nation, under God, shall have a new birth of freedom-and that government of the people, by the people, for the people shall not perish from the earth.",
+        "url": "/troubleshoot_1"
+    }
+    ,
+    
+    "spring-second": {
+        "title": "Spring 강좌(2) - Spring 제어문",
+            "author": "BigZero",
+            "category": "",
+            "content": "Spring 강좌는 여러 절로 구성되어 있습니다.     Spring 강좌(1) - Spring 기본    Spring 강좌(2) - Spring 제어문Spring 제어문Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.But, in a larger sense, we can not dedicate-we can not consecrate-we can not hallow-this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us-that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion-that we here highly resolve that these dead shall not have died in vain-that this nation, under God, shall have a new birth of freedom-and that government of the people, by the people, for the people shall not perish from the earth.",
+        "url": "/spring-second"
+    }
+    ,
+    
+    "spring-first": {
+        "title": "Spring 강좌(1) - Spring 기본",
+            "author": "BigZero",
+            "category": "",
+            "content": "Spring 강좌는 여러 절로 구성되어 있습니다.     Spring 강좌(1) - Spring 기본    Spring 강좌(2) - Spring 제어문Spring basicString spring = \"beautiful\";Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.But, in a larger sense, we can not dedicate-we can not consecrate-we can not hallow-this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us-that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion-that we here highly resolve that these dead shall not have died in vain-that this nation, under God, shall have a new birth of freedom-and that government of the people, by the people, for the people shall not perish from the earth.",
+        "url": "/spring-first"
+    }
+    
+    
+    };
+</script>
+<script src="assets/js/lunr.js"></script>
+<script src="assets/js/search.js"></script>
+            </section>
 
-    Spring 강좌(1) - Spring 기본
-    Spring 강좌(2) - Spring 제어문
+        </article>
 
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/built/images/author-logo-cow.png" alt="BigZero" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/BigZero/">BigZero</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-    <article class="post-card tag-template">
-        
-            <a class="post-card-image-link" href="/spring-first">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/post-background-animal_chara_radio_penguin.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/spring-first">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Spring</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">Spring 강좌(1) - Spring 기본</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>Spring 강좌는 여러 절로 구성되어 있습니다. 
-
-    Spring 강좌(1) - Spring 기본
-    Spring 강좌(2) - Spring 제어문
-
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/built/images/author-logo-cow.png" alt="BigZero" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/BigZero/">BigZero</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-
-        </div>
     </div>
 </main>
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+<script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+
 
 
         <!-- Previous/next page links - displayed on every page -->
@@ -363,7 +307,7 @@
     <!-- Paginator increased to "infinit" in _config.yml -->
     <!-- if paginator.posts  -->
     <!-- <script>
-        var maxPages = parseInt('1');
+        var maxPages = parseInt('');
     </script>
     <script src="/assets/js/infinitescroll.js"></script> -->
     <!-- /endif -->
@@ -386,6 +330,14 @@
 
 
     <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+
     
 
     <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
