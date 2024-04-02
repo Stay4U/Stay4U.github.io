@@ -4,7 +4,7 @@
     <title> - Articles</title>
     <description>IT 기술 블로그</description>
     <link>
-    http://localhost:4000</link>
+    https://stay4u.github.io</link>
     
       
       <item>
@@ -16,8 +16,8 @@
         
         <pubDate>Fri, 28 Sep 2018 01:40:00 +0900</pubDate>
         <link>
-        http://localhost:4000/troubleshoot_1</link>
-        <guid isPermaLink="true">http://localhost:4000/troubleshoot_1</guid>
+        https://stay4u.github.io/troubleshoot_1</link>
+        <guid isPermaLink="true">https://stay4u.github.io/troubleshoot_1</guid>
       </item>
       
     
@@ -35,8 +35,8 @@
         
         <pubDate>Fri, 28 Sep 2018 01:40:00 +0900</pubDate>
         <link>
-        http://localhost:4000/spring-second</link>
-        <guid isPermaLink="true">http://localhost:4000/spring-second</guid>
+        https://stay4u.github.io/spring-second</link>
+        <guid isPermaLink="true">https://stay4u.github.io/spring-second</guid>
       </item>
       
     
@@ -54,8 +54,8 @@
         
         <pubDate>Fri, 28 Sep 2018 01:40:00 +0900</pubDate>
         <link>
-        http://localhost:4000/spring-first</link>
-        <guid isPermaLink="true">http://localhost:4000/spring-first</guid>
+        https://stay4u.github.io/spring-first</link>
+        <guid isPermaLink="true">https://stay4u.github.io/spring-first</guid>
       </item>
       
     
