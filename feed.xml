@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://stay4u.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://stay4u.github.io/" rel="alternate" type="text/html" /><updated>2024-04-03T00:55:54+09:00</updated><id>https://stay4u.github.io/feed.xml</id><title type="html">Technical Blog</title><subtitle>IT 기술 블로그</subtitle><entry><title type="html">Spring 강좌(1) - Spring 기본</title><link href="https://stay4u.github.io/spring-first" rel="alternate" type="text/html" title="Spring 강좌(1) - Spring 기본" /><published>2018-09-28T01:40:00+09:00</published><updated>2018-09-28T01:40:00+09:00</updated><id>https://stay4u.github.io/%08spring-first</id><content type="html" xml:base="https://stay4u.github.io/spring-first">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://stay4u.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://stay4u.github.io/" rel="alternate" type="text/html" /><updated>2024-04-03T01:31:52+09:00</updated><id>https://stay4u.github.io/feed.xml</id><title type="html">Technical Blog</title><subtitle>IT 기술 블로그</subtitle><entry><title type="html">Spring 강좌(1) - Spring 기본</title><link href="https://stay4u.github.io/spring-first" rel="alternate" type="text/html" title="Spring 강좌(1) - Spring 기본" /><published>2018-09-28T01:40:00+09:00</published><updated>2018-09-28T01:40:00+09:00</updated><id>https://stay4u.github.io/%08spring-first</id><content type="html" xml:base="https://stay4u.github.io/spring-first">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./spring-first&quot;&gt;Spring 강좌(1) - Spring 기본&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./spring-second&quot;&gt;Spring 강좌(2) - Spring 제어문&lt;/a&gt;&lt;/li&gt;
@@ -8,6 +8,81 @@
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spring&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;beautiful&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;noscript&gt;&lt;pre&gt;(function() {
+    function displaySearchResults(results, store) {
+        var searchResults = document.getElementById(&amp;#39;search-results&amp;#39;);
+
+        if (results.length) { // Are there any results?
+            var appendString = &amp;#39;&amp;#39;;
+
+            for (var i = 0; i &amp;lt; results.length; i++) {  // Iterate over the results
+                var item = store[results[i].ref];
+                appendString += &amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;&amp;#39; + item.url + &amp;#39;&amp;quot;&amp;gt;&amp;lt;h6&amp;gt;&amp;#39; + item.title + &amp;#39;&amp;lt;/h6&amp;gt;&amp;lt;/a&amp;gt;&amp;#39;;
+                appendString += &amp;#39;&amp;lt;p&amp;gt;&amp;#39; + item.content.substring(0, 150) + &amp;#39;...&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;;
+            }
+
+            searchResults.innerHTML = appendString;
+        } else {
+            searchResults.innerHTML = &amp;#39;&amp;lt;li&amp;gt;검색 결과가 없습니다.&amp;lt;/li&amp;gt;&amp;#39;;
+        }
+    }
+
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split(&amp;#39;&amp;amp;&amp;#39;);
+
+        for (var i = 0; i &amp;lt; vars.length; i++) {
+            var pair = vars[i].split(&amp;#39;=&amp;#39;);
+
+            if (pair[0] === variable) {
+                return decodeURIComponent(pair[1].replace(/\+/g, &amp;#39;%20&amp;#39;));
+            }
+        }
+    }
+
+    function trimmerEnKo(token) {
+        return token
+            .replace(/^[^\w가-힣]+/, &amp;#39;&amp;#39;)
+            .replace(/[^\w가-힣]+$/, &amp;#39;&amp;#39;);
+    };
+
+    var searchTerm = getQueryVariable(&amp;#39;query&amp;#39;);
+
+    if (searchTerm) {
+        document.getElementById(&amp;#39;search-box&amp;#39;).setAttribute(&amp;quot;value&amp;quot;, searchTerm);
+
+        // Initalize lunr with the fields it will be searching on. I&amp;#39;ve given title
+        // a boost of 10 to indicate matches on this field are more important.
+        var idx = lunr(function () {
+            this.pipeline.reset();
+            this.pipeline.add(
+                trimmerEnKo,
+                lunr.stopWordFilter,
+                lunr.stemmer
+            );
+            this.field(&amp;#39;id&amp;#39;);
+            this.field(&amp;#39;title&amp;#39;, { boost: 10 });
+            this.field(&amp;#39;author&amp;#39;);
+            this.field(&amp;#39;category&amp;#39;);
+            this.field(&amp;#39;content&amp;#39;);
+        });
+
+        for (var key in window.store) { // Add the data to lunr
+            idx.add({
+                &amp;#39;id&amp;#39;: key,
+                &amp;#39;title&amp;#39;: window.store[key].title,
+                &amp;#39;author&amp;#39;: window.store[key].author,
+                &amp;#39;category&amp;#39;: window.store[key].category,
+                &amp;#39;content&amp;#39;: window.store[key].content
+            });
+
+            var results = idx.search(searchTerm); // Get lunr to perform a search
+            displaySearchResults(results, window.store); // We&amp;#39;ll write this in the next section
+        }
+    }
+})();&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/Stay4U/962b37b446e3d153c33f28f973d51ea4.js&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
 
