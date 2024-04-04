@@ -4,7 +4,23 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>https://stay4u.github.io/troubleshoot_1.html</loc>
+        <loc>https://stay4u.github.io/designPattern-01-solid.html</loc>
+        
+        <lastmod>2024-04-04T01:40:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://stay4u.github.io/troubleshoot-1.html</loc>
         
         <lastmod>2018-09-28T01:40:00+09:00</lastmod>
         
