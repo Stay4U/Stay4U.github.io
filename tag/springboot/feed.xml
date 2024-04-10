@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="http://localhost:4000/tag/springboot/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2024-04-10T23:47:25+09:00</updated>
-  <id>http://localhost:4000/tag/springboot/feed.xml</id>
+  <link href="https://stay4u.github.io/tag/springboot/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://stay4u.github.io/" rel="alternate" type="text/html" />
+  <updated>2024-04-10T23:53:17+09:00</updated>
+  <id>https://stay4u.github.io/tag/springboot/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성</title>
-      <link href="http://localhost:4000/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty" rel="alternate" type="text/html" title="SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성" />
+      <link href="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty" rel="alternate" type="text/html" title="SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성" />
       <published>2024-04-10T08:37:00+09:00</published>
       <updated>2024-04-10T08:37:00+09:00</updated>
-      <id>http://localhost:4000/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty</id>
-      <content type="html" xml:base="http://localhost:4000/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
+      <id>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty</id>
+      <content type="html" xml:base="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
@@ -83,11 +83,11 @@
   
     <entry>
       <title type="html">SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수</title>
-      <link href="http://localhost:4000/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS" rel="alternate" type="text/html" title="SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수" />
+      <link href="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS" rel="alternate" type="text/html" title="SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수" />
       <published>2024-04-10T08:24:00+09:00</published>
       <updated>2024-04-10T08:24:00+09:00</updated>
-      <id>http://localhost:4000/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS</id>
-      <content type="html" xml:base="http://localhost:4000/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
+      <id>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS</id>
+      <content type="html" xml:base="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
@@ -148,11 +148,11 @@ Mac : printenv
   
     <entry>
       <title type="html">SpringBoot - 외부설정과 프로필(1) 외부 설정이란?</title>
-      <link href="http://localhost:4000/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro" rel="alternate" type="text/html" title="SpringBoot - 외부설정과 프로필(1) 외부 설정이란?" />
+      <link href="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro" rel="alternate" type="text/html" title="SpringBoot - 외부설정과 프로필(1) 외부 설정이란?" />
       <published>2024-04-09T22:53:00+09:00</published>
       <updated>2024-04-09T22:53:00+09:00</updated>
-      <id>http://localhost:4000/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro</id>
-      <content type="html" xml:base="http://localhost:4000/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
+      <id>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro</id>
+      <content type="html" xml:base="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;

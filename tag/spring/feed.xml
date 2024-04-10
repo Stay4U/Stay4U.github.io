@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="http://localhost:4000/tag/spring/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2024-04-10T23:47:25+09:00</updated>
-  <id>http://localhost:4000/tag/spring/feed.xml</id>
+  <link href="https://stay4u.github.io/tag/spring/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://stay4u.github.io/" rel="alternate" type="text/html" />
+  <updated>2024-04-10T23:53:17+09:00</updated>
+  <id>https://stay4u.github.io/tag/spring/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">Spring 강좌(2) - Spring 제어문</title>
-      <link href="http://localhost:4000/spring-second" rel="alternate" type="text/html" title="Spring 강좌(2) - Spring 제어문" />
+      <link href="https://stay4u.github.io/spring-second" rel="alternate" type="text/html" title="Spring 강좌(2) - Spring 제어문" />
       <published>2018-09-28T01:40:00+09:00</published>
       <updated>2018-09-28T01:40:00+09:00</updated>
-      <id>http://localhost:4000/spring-second</id>
-      <content type="html" xml:base="http://localhost:4000/spring-second">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+      <id>https://stay4u.github.io/spring-second</id>
+      <content type="html" xml:base="https://stay4u.github.io/spring-second">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./spring-first&quot;&gt;Spring 강좌(1) - Spring 기본&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./spring-second&quot;&gt;Spring 강좌(2) - Spring 제어문&lt;/a&gt;&lt;/li&gt;
@@ -79,11 +79,11 @@
   
     <entry>
       <title type="html">Spring 강좌(1) - Spring 기본</title>
-      <link href="http://localhost:4000/spring-first" rel="alternate" type="text/html" title="Spring 강좌(1) - Spring 기본" />
+      <link href="https://stay4u.github.io/spring-first" rel="alternate" type="text/html" title="Spring 강좌(1) - Spring 기본" />
       <published>2018-09-28T01:40:00+09:00</published>
       <updated>2018-09-28T01:40:00+09:00</updated>
-      <id>http://localhost:4000/%08spring-first</id>
-      <content type="html" xml:base="http://localhost:4000/spring-first">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+      <id>https://stay4u.github.io/%08spring-first</id>
+      <content type="html" xml:base="https://stay4u.github.io/spring-first">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./spring-first&quot;&gt;Spring 강좌(1) - Spring 기본&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./spring-second&quot;&gt;Spring 강좌(2) - Spring 제어문&lt;/a&gt;&lt;/li&gt;
