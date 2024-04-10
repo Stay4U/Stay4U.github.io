@@ -4,6 +4,54 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty.html</loc>
+        
+        <lastmod>2024-04-10T08:37:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS.html</loc>
+        
+        <lastmod>2024-04-10T08:24:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro.html</loc>
+        
+        <lastmod>2024-04-09T22:53:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://stay4u.github.io/designPattern-01-solid.html</loc>
         
         <lastmod>2024-04-04T01:40:00+09:00</lastmod>

@@ -133,8 +133,7 @@ into the {body} of the default.hbs template -->
             <ul class="nav" role="menu">
     <li class="nav-home" role="menuitem"><a href="/">home</a></li>
     <li class="nav-about" role="menuitem"><a href="/about/">about</a></li>
-    <li class="nav-spring" role="menuitem"><a href="/tag/spring/">spring</a></li>
-    <li class="nav-troubleShoot" role="menuitem"><a href="/tag/troubleshoot/">troubleshoot</a></li>
+    <li class="nav-SpringBoot" role="menuitem"><a href="/tag/SpringBoot/">Spring Boot</a></li>
     <li class="nav-designPattern" role="menuitem"><a href="/tag/designpattern/">Design Pattern</a></li>
     <li class="nav-archive" role="menuitem">
         <a href="/archive.html">All Posts</a>
@@ -183,6 +182,33 @@ into the {body} of the default.hbs template -->
 
 <script>
     window.store = {
+    
+    "springboot-externalsettingandprofile1-externalsetting03-javasystemproperty": {
+        "title": "SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성",
+            "author": "BigZero",
+            "category": "",
+            "content": "Spring Boot 외부설정과 프로필1    SpringBoot - 외부설정과 프로필(1) 외부 설정이란?    SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수    SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성자바 시스템 속성  실행한 JVM 안에서 접근 가능한 외부 설정사용 방법java -Durl=dev -jar app.jar",
+        "url": "/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty"
+    }
+    ,
+    
+    "springboot-externalsettingandprofile1-externalsetting02-os": {
+        "title": "SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수",
+            "author": "BigZero",
+            "category": "",
+            "content": "Spring Boot 외부설정과 프로필1    SpringBoot - 외부설정과 프로필(1) 외부 설정이란?    SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수    SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성OS 환경 변수  해당 OS를 사용하는 모든 프로그램에서 사용할 수 있는 설정 값조회 방법 - OSWindows : setMac : printenv조회 방법 - JavaMap&lt;String, String&gt; envMap = System.getenv();for (String key : envMap.keySet()) {    log.info(\"env {}={}\", key, System.getenv(key));}사용 방법  개발서버에는 OS 환경 변수를 “DBURL=dev.db.com”으로 등록하고, 운영서버에는 OS 환경 변수를 “DBURL=prod.db.com”으로 등록하면 동일한 어플리케이션에서 다른 “DBURL”을 읽게 된다.",
+        "url": "/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS"
+    }
+    ,
+    
+    "springboot-externalsettingandprofile1-externalsetting01-intro": {
+        "title": "SpringBoot - 외부설정과 프로필(1) 외부 설정이란?",
+            "author": "BigZero",
+            "category": "",
+            "content": "Spring Boot 외부설정과 프로필1    SpringBoot - 외부설정과 프로필(1) 외부 설정이란?    SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수    SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성외부 설정이란?  어플리케이션이 구동되는 환경별로 적용되는 설정정보          예) 개발환경에서는 개발DB접속정보(설정정보)를 사용      어플리케이션에 외부 설정을 적용하는 방식  환경별 설정정보를 소스에 작성하여 빌드          1) 환경별로 빌드해야하는 단점 2) 환경별로 최종결과물이 다름 3) 개발용 빌드와 운영용 빌드사이에 소스가 변경될 가능성이 존재        실행시점에 외부 설정 주입          1) 환경에 따라 변하는 외부 설정값과 빌드결과물을 분리 2) 유지보수에 좋은 방식      외부 설정을 읽어오는 방법  OS 환경변수          OS에서 지원하는 외부 설정 OS를 사용하는 모든 프로세스에서 사용        자바 시스템 속성          JVM 안에서 접근 가능한 외부 설정 자바가 내부에서 미리 설정해두고 사용하는 속성이 존재        자바 커맨드 라인 인수          커맨드 라인으로 전달하는 외부 설정 메인메서드로 전달        외부 파일(설정 데이터)          프로그램에서 외부 파일을 읽어서 사용 환경별로 외부 파일을 생성하여 사용      ",
+        "url": "/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro"
+    }
+    ,
     
     "designpattern-01-solid": {
         "title": "Design Pattern(1) - SOLID",
