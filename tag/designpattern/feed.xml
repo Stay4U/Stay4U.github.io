@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://stay4u.github.io/tag/designpattern/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://stay4u.github.io/" rel="alternate" type="text/html" />
-  <updated>2024-04-10T13:43:45+09:00</updated>
+  <updated>2024-04-10T13:45:37+09:00</updated>
   <id>https://stay4u.github.io/tag/designpattern/feed.xml</id>
 
   
@@ -62,7 +62,7 @@
 &lt;ul&gt;
   &lt;li&gt;🖨️ 모듈은 메서드와 클래스를 의미한다.&lt;/li&gt;
   &lt;li&gt;🧑‍🎤 액터란 특정 모듈에 대해 동일한 책임을 기대하는 사용자들의 집합이다.&lt;/li&gt;
-  &lt;li&gt;👨‍🍼 책임이란 모듈의 기능 또는 수정된 기능이 액터에게만 영향을 주는 것이다.&lt;/li&gt;
+  &lt;li&gt;👨‍🍼 책임이란 모듈의 기능 또는 수정할 기능이 액터에게만 영향을 주는 것이다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;2-ocp-개방-폐쇄-원칙&quot;&gt;2. OCP 개방-폐쇄 원칙&lt;/h2&gt;
