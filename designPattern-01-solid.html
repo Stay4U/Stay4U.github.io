@@ -58,27 +58,7 @@
     <meta property="og:site_name" content="Technical Blog" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Design Pattern(1) - SOLID" />
-    <meta property="og:description" content="Design Pattern
-
-    Design Pattern(1) - SOLID
-
-
-SOLID
-클린코드로 유명한 로버트 마틴이 정리한 객제 지향 설계의 5가지 원칙
-
-
-1. SRP 단일 책임 원칙 💔
-– Single Responsibility Principle
-
-
-  한 클래스는 하나의 책임만 가져야 한다.
-    
-      ㄴㅇㄹ
-
-    
-  
-
-" />
+    <meta property="og:description" content="Design Pattern Design Pattern(1) - SOLID SOLID 시간이 지나도 유지보수와 확장이 쉬운 시스템을 만들기 위한 5가지 원칙 [1] SRP 단일 책임 원칙 [2] OCP 개방-폐쇄 원칙 [3] LSP 리스코프 치환 원칙 [4] ISP 인터페이스 분리 원칙 [5] DIP 의존 역전 원칙 1. SRP 단일 책임 원칙 👨‍🍼 – Single Responsibility" />
     <meta property="og:url" content="https://stay4u.github.io/designPattern-01-solid" />
     <meta property="og:image" content="https://stay4u.github.io/assets/built/images/post-background-animal_chara_radio_penguin.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -88,27 +68,7 @@ SOLID
     <meta property="article:tag" content="Designpattern" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Design Pattern(1) - SOLID" />
-    <meta name="twitter:description" content="Design Pattern
-
-    Design Pattern(1) - SOLID
-
-
-SOLID
-클린코드로 유명한 로버트 마틴이 정리한 객제 지향 설계의 5가지 원칙
-
-
-1. SRP 단일 책임 원칙 💔
-– Single Responsibility Principle
-
-
-  한 클래스는 하나의 책임만 가져야 한다.
-    
-      ㄴㅇㄹ
-
-    
-  
-
-" />
+    <meta name="twitter:description" content="Design Pattern Design Pattern(1) - SOLID SOLID 시간이 지나도 유지보수와 확장이 쉬운 시스템을 만들기 위한 5가지 원칙 [1] SRP 단일 책임 원칙 [2] OCP 개방-폐쇄 원칙 [3] LSP 리스코프 치환 원칙 [4] ISP 인터페이스 분리 원칙 [5] DIP 의존 역전 원칙 1. SRP 단일 책임 원칙 👨‍🍼 – Single Responsibility" />
     <meta name="twitter:url" content="https://stay4u.github.io/" />
     <meta name="twitter:image" content="https://stay4u.github.io/assets/built/images/post-background-animal_chara_radio_penguin.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -140,27 +100,7 @@ SOLID
         "@type": "WebPage",
         "@id": "https://stay4u.github.io/designPattern-01-solid"
     },
-    "description": "Design Pattern
-
-    Design Pattern(1) - SOLID
-
-
-SOLID
-클린코드로 유명한 로버트 마틴이 정리한 객제 지향 설계의 5가지 원칙
-
-
-1. SRP 단일 책임 원칙 💔
-– Single Responsibility Principle
-
-
-  한 클래스는 하나의 책임만 가져야 한다.
-    
-      ㄴㅇㄹ
-
-    
-  
-
-"
+    "description": "Design Pattern Design Pattern(1) - SOLID SOLID 시간이 지나도 유지보수와 확장이 쉬운 시스템을 만들기 위한 5가지 원칙 [1] SRP 단일 책임 원칙 [2] OCP 개방-폐쇄 원칙 [3] LSP 리스코프 치환 원칙 [4] ISP 인터페이스 분리 원칙 [5] DIP 의존 역전 원칙 1. SRP 단일 책임 원칙 👨‍🍼 – Single Responsibility"
 }
     </script>
 
@@ -261,20 +201,31 @@ into the {body} of the default.hbs template -->
 </ul>
 
 <h1 id="solid">SOLID</h1>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>클린코드로 유명한 로버트 마틴이 정리한 객제 지향 설계의 5가지 원칙
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>시간이 지나도 유지보수와 확장이 쉬운 시스템을 만들기 위한 5가지 원칙
+[1] SRP 단일 책임 원칙
+[2] OCP 개방-폐쇄 원칙
+[3] LSP 리스코프 치환 원칙
+[4] ISP 인터페이스 분리 원칙
+[5] DIP 의존 역전 원칙
 </code></pre></div></div>
 
-<h2 id="1-srp-단일-책임-원칙-">1. SRP 단일 책임 원칙 💔</h2>
+<h2 id="1-srp-단일-책임-원칙-">1. SRP 단일 책임 원칙 👨‍🍼</h2>
 <p>– Single Responsibility Principle</p>
 
-<ul>
-  <li>한 클래스는 하나의 책임만 가져야 한다.
-    <blockquote>
-      <p>ㄴㅇㄹ</p>
+<h3 id="하나의-모듈module은-하나의-액터actor에-대해서만-책임져야-한다">하나의 <strong>모듈(Module)</strong>은 하나의 <strong>액터(Actor)</strong>에 대해서만 <strong>책임</strong>져야 한다.</h3>
+<blockquote>
+  <p>그렇기 때문에 모듈을 변경하려는 이유는 단 하나여야 한다.</p>
+</blockquote>
 
-    </blockquote>
-  </li>
+<ul>
+  <li>🖨️ 모듈은 메서드와 클래스를 의미한다.</li>
+  <li>🧑‍🎤 액터란 특정 모듈에 대해 동일한 책임을 기대하는 사용자들의 집합이다.</li>
+  <li>👨‍🍼 책임이란 모듈의 기능 또는 수정된 기능이 액터에게만 영향을 주는 것이다.</li>
 </ul>
+
+<h2 id="2-ocp-개방-폐쇄-원칙">2. OCP 개방-폐쇄 원칙</h2>
+<p>– Open Closed Priciple</p>
+
 
                 </div>
             </section>
