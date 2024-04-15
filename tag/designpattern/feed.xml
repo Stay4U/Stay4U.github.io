@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://stay4u.github.io/tag/designpattern/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://stay4u.github.io/" rel="alternate" type="text/html" />
-  <updated>2024-04-13T14:51:11+09:00</updated>
+  <updated>2024-04-16T00:42:46+09:00</updated>
   <id>https://stay4u.github.io/tag/designpattern/feed.xml</id>
 
   
@@ -33,13 +33,13 @@
   
     <entry>
       <title type="html">Design Pattern(1) - SOLID</title>
-      <link href="https://stay4u.github.io/designPattern-01-solid" rel="alternate" type="text/html" title="Design Pattern(1) - SOLID" />
+      <link href="https://stay4u.github.io/DesignPattern-01-solid" rel="alternate" type="text/html" title="Design Pattern(1) - SOLID" />
       <published>2024-04-04T01:40:00+09:00</published>
       <updated>2024-04-04T01:40:00+09:00</updated>
-      <id>https://stay4u.github.io/designPattern-01-solid</id>
-      <content type="html" xml:base="https://stay4u.github.io/designPattern-01-solid">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Design Pattern&lt;/span&gt;&lt;/p&gt;
+      <id>https://stay4u.github.io/DesignPattern-01-solid</id>
+      <content type="html" xml:base="https://stay4u.github.io/DesignPattern-01-solid">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Design Pattern List&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./designPattern-01-solid&quot;&gt;Design Pattern(1) - SOLID&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./DesignPattern-01-solid&quot;&gt;Design Pattern(1) - SOLID&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;solid&quot;&gt;SOLID&lt;/h1&gt;
@@ -83,11 +83,11 @@
       
 
       
-        <category term="designPattern" />
+        <category term="DesignPattern" />
       
 
       
-        <summary type="html">Design Pattern Design Pattern(1) - SOLID</summary>
+        <summary type="html">Design Pattern List Design Pattern(1) - SOLID</summary>
       
 
       
