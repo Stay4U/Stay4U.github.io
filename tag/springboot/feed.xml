@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://stay4u.github.io/tag/springboot/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://stay4u.github.io/" rel="alternate" type="text/html" />
-  <updated>2024-04-16T00:42:46+09:00</updated>
+  <updated>2024-04-17T01:37:15+09:00</updated>
   <id>https://stay4u.github.io/tag/springboot/feed.xml</id>
 
   
@@ -174,8 +174,8 @@ Mac : printenv
     </entry>
   
     <entry>
-      <title type="html">SpringBoot - 외부설정과 프로필(1) 외부 설정이란?</title>
-      <link href="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro" rel="alternate" type="text/html" title="SpringBoot - 외부설정과 프로필(1) 외부 설정이란?" />
+      <title type="html">Spring Boot - 외부설정과 프로필(1) 외부 설정이란?</title>
+      <link href="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro" rel="alternate" type="text/html" title="Spring Boot - 외부설정과 프로필(1) 외부 설정이란?" />
       <published>2024-04-09T22:53:00+09:00</published>
       <updated>2024-04-09T22:53:00+09:00</updated>
       <id>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro</id>
