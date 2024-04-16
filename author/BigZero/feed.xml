@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://stay4u.github.io/author/BigZero/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://stay4u.github.io/" rel="alternate" type="text/html" />
-  <updated>2024-04-17T01:53:09+09:00</updated>
+  <updated>2024-04-17T02:00:54+09:00</updated>
   <id>https://stay4u.github.io/author/BigZero/feed.xml</id>
 
   
@@ -175,11 +175,11 @@ Mac : printenv
   
     <entry>
       <title type="html">Spring Boot - 외부설정과 프로필(1) 외부 설정이란?</title>
-      <link href="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro" rel="alternate" type="text/html" title="Spring Boot - 외부설정과 프로필(1) 외부 설정이란?" />
+      <link href="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-intro" rel="alternate" type="text/html" title="Spring Boot - 외부설정과 프로필(1) 외부 설정이란?" />
       <published>2024-04-09T22:53:00+09:00</published>
       <updated>2024-04-09T22:53:00+09:00</updated>
-      <id>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro</id>
-      <content type="html" xml:base="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
+      <id>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-intro</id>
+      <content type="html" xml:base="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
@@ -276,7 +276,7 @@ OS를 사용하는 모든 프로세스에서 사용&lt;/p&gt;
       <id>https://stay4u.github.io/DesignPattern-01-solid</id>
       <content type="html" xml:base="https://stay4u.github.io/DesignPattern-01-solid">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Design Pattern List&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./DesignPattern-01-solid&quot;&gt;Design Pattern(1) - SOLID&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./designPattern-01-solid&quot;&gt;Design Pattern(1) - SOLID&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;solid&quot;&gt;SOLID&lt;/h1&gt;
