@@ -4,6 +4,86 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.html</loc>
+        
+        <lastmod>2024-04-29T06:27:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile.html</loc>
+        
+        <lastmod>2024-04-29T06:27:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate-copy.html</loc>
+        
+        <lastmod>2024-04-29T06:27:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot.html</loc>
+        
+        <lastmod>2024-04-29T06:27:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments.html</loc>
+        
+        <lastmod>2024-04-29T06:27:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments.html</loc>
         
         <lastmod>2024-04-18T21:28:00+09:00</lastmod>
