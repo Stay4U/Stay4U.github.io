@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://stay4u.github.io/tag/springboot/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://stay4u.github.io/" rel="alternate" type="text/html" />
-  <updated>2024-04-30T00:56:42+09:00</updated>
+  <updated>2024-04-30T00:58:11+09:00</updated>
   <id>https://stay4u.github.io/tag/springboot/feed.xml</id>
 
   
@@ -43,6 +43,11 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -70,7 +75,7 @@
       
 
       
-        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</summary>
+        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수 SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트 SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합 SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일 SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</summary>
       
 
       
@@ -89,6 +94,11 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -129,7 +139,7 @@
       
 
       
-        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</summary>
+        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수 SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트 SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합 SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일 SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</summary>
       
 
       
@@ -148,6 +158,11 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -239,7 +254,7 @@
       
 
       
-        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</summary>
+        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수 SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트 SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합 SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일 SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</summary>
       
 
       
@@ -258,6 +273,11 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;커맨드-라인-옵션-인수와-스프링-부트&quot;&gt;커맨드 라인 옵션 인수와 스프링 부트&lt;/h1&gt;
@@ -319,7 +339,7 @@
       
 
       
-        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</summary>
+        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수 SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트 SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합 SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일 SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</summary>
       
 
       
@@ -338,6 +358,11 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;커맨드-라인-옵션-인수&quot;&gt;커맨드 라인 옵션 인수&lt;/h1&gt;
@@ -415,7 +440,7 @@
       
 
       
-        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</summary>
+        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수 SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트 SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합 SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일 SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</summary>
       
 
       
@@ -434,6 +459,11 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;커맨드-라인-인수&quot;&gt;커맨드 라인 인수&lt;/h1&gt;
@@ -498,7 +528,7 @@
       
 
       
-        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</summary>
+        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수 SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트 SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합 SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일 SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</summary>
       
 
       
@@ -517,6 +547,11 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;자바-시스템-속성&quot;&gt;자바 시스템 속성&lt;/h1&gt;
@@ -576,7 +611,7 @@ java &lt;span class=&quot;nt&quot;&gt;-Durl&lt;/span&gt;&lt;span class=&quot;o&q
       
 
       
-        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</summary>
+        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수 SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트 SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합 SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일 SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</summary>
       
 
       
@@ -595,6 +630,11 @@ java &lt;span class=&quot;nt&quot;&gt;-Durl&lt;/span&gt;&lt;span class=&quot;o&q
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;os-환경-변수&quot;&gt;OS 환경 변수&lt;/h1&gt;
@@ -642,7 +682,7 @@ Mac : printenv
       
 
       
-        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</summary>
+        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수 SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트 SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합 SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일 SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</summary>
       
 
       
@@ -661,6 +701,11 @@ Mac : printenv
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;외부-설정이란&quot;&gt;외부 설정이란?&lt;/h1&gt;
@@ -738,7 +783,7 @@ OS를 사용하는 모든 프로세스에서 사용&lt;/p&gt;
       
 
       
-        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</summary>
+        <summary type="html">Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수 SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트 SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합 SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일 SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</summary>
       
 
       
