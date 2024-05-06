@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://stay4u.github.io/author/BigZero/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://stay4u.github.io/" rel="alternate" type="text/html" />
-  <updated>2024-05-06T21:54:14+09:00</updated>
+  <updated>2024-05-06T22:03:42+09:00</updated>
   <id>https://stay4u.github.io/author/BigZero/feed.xml</id>
 
   
@@ -62,6 +62,7 @@
   &lt;p&gt;applicaion.properties에서 prod와 dev모두 작성함
 작성방법&lt;/p&gt;
   &lt;ol&gt;
+    &lt;li&gt;프로필에 따라 논리적으로 구분된 설정 데이터를 활성화하려면 spring.config.activate.on-profile에 프로필 값을 지정한다.&lt;/li&gt;
     &lt;li&gt;파일을 구분할 때는 구분기호로 #---을 사용한다.&lt;/li&gt;
     &lt;li&gt;구분기호 #---을 사용할 때 선행 공백이 없어야한다.&lt;/li&gt;
     &lt;li&gt;구분기호의 위, 아래에는 주석을 사용하면 안된다.&lt;/li&gt;
