@@ -4,6 +4,22 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine.html</loc>
+        
+        <lastmod>2024-05-05T18:01:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.html</loc>
         
         <lastmod>2024-04-29T06:27:00+09:00</lastmod>
@@ -36,7 +52,7 @@
     </url>
     
     <url>
-        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate-copy.html</loc>
+        <loc>https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate.html</loc>
         
         <lastmod>2024-04-29T06:27:00+09:00</lastmod>
         

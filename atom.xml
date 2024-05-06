@@ -8,7 +8,7 @@
     
       
       <item>
-        <title>SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터2 - 내부 파일 분리</title>
+        <title>SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -20,8 +20,43 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1 id=&quot;설정-데이터3---내부-파일-합체&quot;&gt;설정 데이터3 - 내부 파일 합체&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;설정 파일을 각각 분리하여 관리하면 한눈에 전체가 들어오지 않는다.
+스프링에서는 이 단점을 보완하기 위해 물리적인 하나의 파일에서 논리적으로 영역을 구분하는 방법을 제공한다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Sun, 05 May 2024 18:01:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine</link>
+        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1 id=&quot;설정-데이터2---내부-파일-분리&quot;&gt;설정 데이터2 - 내부 파일 분리&lt;/h1&gt;
 
 </description>
         
@@ -46,7 +81,8 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -72,15 +108,16 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Mon, 29 Apr 2024 06:27:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate-copy</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate-copy</guid>
+        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate</link>
+        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate</guid>
       </item>
       
     
@@ -98,7 +135,8 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -124,7 +162,8 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -150,7 +189,8 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -176,7 +216,8 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -202,7 +243,8 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -228,7 +270,8 @@
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate.md&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
