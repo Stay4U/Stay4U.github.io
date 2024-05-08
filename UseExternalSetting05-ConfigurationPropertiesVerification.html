@@ -11,7 +11,7 @@
 
 
 
-    <title>SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수</title>
+    <title>SpringBoot - 외부설정과 프로필2 (5) - 외부 설정 사용 - @ConfigurationProperties 검증</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -51,24 +51,24 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="IT 기술 블로그" />
     <link rel="shortcut icon" href="https://stay4u.github.io/assets/built/images/favicon-zero.ico" type="image/png" />
-    <link rel="canonical" href="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS" />
+    <link rel="canonical" href="https://stay4u.github.io/UseExternalSetting05-ConfigurationPropertiesVerification" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Technical Blog" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수" />
-    <meta property="og:description" content="Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션" />
-    <meta property="og:url" content="https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS" />
+    <meta property="og:title" content="SpringBoot - 외부설정과 프로필2 (5) - 외부 설정 사용 - @ConfigurationProperties 검증" />
+    <meta property="og:description" content="Spring Boot 외부설정과 프로필2 (1) 외부 설정 사용 - Environment (2) 외부 설정 사용 - @Value (3) 외부 설정 사용 - @ConfigurationProperties 시작 (4) 외부 설정 사용 - @ConfigurationProperties 생성자 (5) 외부 설정 사용 - @ConfigurationProperties 검증 (6) 외부 설정 사용 - YAML (7) 외부 설정 사용 - @Profile @ConfigurationProperties" />
+    <meta property="og:url" content="https://stay4u.github.io/UseExternalSetting05-ConfigurationPropertiesVerification" />
     <meta property="og:image" content="https://stay4u.github.io/assets/built/images/post-background-animal_chara_radio_penguin.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2024-04-10T08:24:00+09:00" />
-    <meta property="article:modified_time" content="2024-04-10T08:24:00+09:00" />
+    <meta property="article:published_time" content="2024-05-05T18:01:00+09:00" />
+    <meta property="article:modified_time" content="2024-05-05T18:01:00+09:00" />
     <meta property="article:tag" content="Springboot" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수" />
-    <meta name="twitter:description" content="Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션" />
+    <meta name="twitter:title" content="SpringBoot - 외부설정과 프로필2 (5) - 외부 설정 사용 - @ConfigurationProperties 검증" />
+    <meta name="twitter:description" content="Spring Boot 외부설정과 프로필2 (1) 외부 설정 사용 - Environment (2) 외부 설정 사용 - @Value (3) 외부 설정 사용 - @ConfigurationProperties 시작 (4) 외부 설정 사용 - @ConfigurationProperties 생성자 (5) 외부 설정 사용 - @ConfigurationProperties 검증 (6) 외부 설정 사용 - YAML (7) 외부 설정 사용 - @Profile @ConfigurationProperties" />
     <meta name="twitter:url" content="https://stay4u.github.io/" />
     <meta name="twitter:image" content="https://stay4u.github.io/assets/built/images/post-background-animal_chara_radio_penguin.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -89,7 +89,7 @@
         "name": "Technical Blog",
         "logo": "https://stay4u.github.io/"
     },
-    "url": "https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS",
+    "url": "https://stay4u.github.io/UseExternalSetting05-ConfigurationPropertiesVerification",
     "image": {
         "@type": "ImageObject",
         "url": "https://stay4u.github.io/assets/built/images/post-background-animal_chara_radio_penguin.png",
@@ -98,9 +98,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS"
+        "@id": "https://stay4u.github.io/UseExternalSetting05-ConfigurationPropertiesVerification"
     },
-    "description": "Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수 SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션"
+    "description": "Spring Boot 외부설정과 프로필2 (1) 외부 설정 사용 - Environment (2) 외부 설정 사용 - @Value (3) 외부 설정 사용 - @ConfigurationProperties 시작 (4) 외부 설정 사용 - @ConfigurationProperties 생성자 (5) 외부 설정 사용 - @ConfigurationProperties 검증 (6) 외부 설정 사용 - YAML (7) 외부 설정 사용 - @Profile @ConfigurationProperties"
 }
     </script>
 
@@ -113,7 +113,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="SpringBoot - 외부설정과 프로필2 (5) - 외부 설정 사용 - @ConfigurationProperties 검증" href="/feed.xml" />
 
 
 </head>
@@ -139,14 +139,16 @@ into the {body} of the default.hbs template -->
             <ul class="nav" role="menu">
     <li class="nav-home" role="menuitem"><a href="/">home</a></li>
     <!-- <li class="nav-about" role="menuitem"><a href="/about/">about</a></li> -->
-    <li class="nav-SpringBoot" role="menuitem"><a href="/tag/springboot/">Spring Boot</a></li>
+    <li class="nav-SpringBoot" role="menuitem"><a href="/tag/categoryList-springBoot/">Spring Boot</a></li>
     <li class="nav-DesignPattern" role="menuitem"><a href="/tag/design-pattern/">Design Pattern</a></li>
+    <!--     
     <li class="nav-archive" role="menuitem">
         <a href="/archive.html">All Posts</a>
     </li>
     <li class="nav-archive" role="menuitem">
         <a href="/author_archive.html">Tag별 Posts</a>
     </li>
+    -->
 </ul>
         
     </div>
@@ -174,7 +176,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="10 April 2024">10 April 2024</time>
+                    <time class="post-full-meta-date" datetime=" 5 May 2024"> 5 May 2024</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -184,7 +186,7 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수</h1>
+                <h1 class="post-full-title">SpringBoot - 외부설정과 프로필2 (5) - 외부 설정 사용 - @ConfigurationProperties 검증</h1>
             </header>
 
             
@@ -194,43 +196,20 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p><span class="table-of-contents-list">Spring Boot 외부설정과 프로필1</span></p>
+                    <p><span class="table-of-contents-list">Spring Boot 외부설정과 프로필2</span></p>
 <ul class="table-of-contents-list">
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro">SpringBoot - 외부설정과 프로필(1) 외부 설정이란?</a></li>
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS">SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수</a></li>
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty">SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성</a></li>
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments">SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수</a></li>
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments">SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수</a></li>
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot">SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트</a></li>
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate">SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합</a></li>
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile">SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일</a></li>
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate">SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</a></li>
-    <li><a href="./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine">SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체</a></li>
+    <li><a href="./UseExternalSetting01-Environment">(1) 외부 설정 사용 - Environment</a></li>
+    <li><a href="./UseExternalSetting02-Value">(2) 외부 설정 사용 - @Value</a></li>
+    <li><a href="./UseExternalSetting03-ConfigurationPropertiesStart">(3) 외부 설정 사용 - @ConfigurationProperties 시작</a></li>
+    <li><a href="./UseExternalSetting04-ConfigurationPropertiesConstructor">(4) 외부 설정 사용 - @ConfigurationProperties 생성자</a></li>
+    <li><a href="./UseExternalSetting05-ConfigurationPropertiesVerification">(5) 외부 설정 사용 - @ConfigurationProperties 검증</a></li>
+    <li><a href="./UseExternalSetting06-YAML">(6) 외부 설정 사용 - YAML</a></li>
+    <li><a href="./UseExternalSetting07-Profile">(7) 외부 설정 사용 - @Profile</a></li>
 </ul>
 
-<h1 id="os-환경-변수">OS 환경 변수</h1>
-<ul>
-  <li>해당 OS를 사용하는 모든 프로그램에서 사용할 수 있는 설정 값</li>
-</ul>
+<hr />
 
-<h2 id="조회-방법---os">조회 방법 - OS</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Windows : set
-Mac : printenv
-</code></pre></div></div>
-
-<h2 id="조회-방법---java">조회 방법 - Java</h2>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">String</span><span class="o">&gt;</span> <span class="n">envMap</span> <span class="o">=</span> <span class="nc">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">();</span>
-<span class="k">for</span> <span class="o">(</span><span class="nc">String</span> <span class="n">key</span> <span class="o">:</span> <span class="n">envMap</span><span class="o">.</span><span class="na">keySet</span><span class="o">())</span> <span class="o">{</span>
-    <span class="n">log</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="s">"env {}={}"</span><span class="o">,</span> <span class="n">key</span><span class="o">,</span> <span class="nc">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">(</span><span class="n">key</span><span class="o">));</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<h2 id="사용-방법">사용 방법</h2>
-<ul>
-  <li>개발서버에는 OS 환경 변수를 “DBURL=dev.db.com”으로 등록하고, <br />
-운영서버에는 OS 환경 변수를 “DBURL=prod.db.com”으로 등록하면 <br />
-동일한 어플리케이션에서 다른 “DBURL”을 읽게 된다.</li>
-</ul>
+<h1 id="configurationproperties-검증">@ConfigurationProperties 검증</h1>
 
 <p><a href="https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC-%ED%99%9C%EC%9A%A9/dashboard" target="_blank">출처 : 스프링 부트 - 핵심 원리와 활용(김영한)</a></p>
 
@@ -296,9 +275,9 @@ Mac : printenv
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS';
-                            var this_page_identifier = '/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS';
-                            var this_page_title = 'SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수';
+                            var this_page_url = 'https://stay4u.github.io/UseExternalSetting05-ConfigurationPropertiesVerification';
+                            var this_page_identifier = '/UseExternalSetting05-ConfigurationPropertiesVerification';
+                            var this_page_title = 'SpringBoot - 외부설정과 프로필2 (5) - 외부 설정 사용 - @ConfigurationProperties 검증';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -345,7 +324,7 @@ Mac : printenv
                                     
                                         
                                         
-                                            <li><a href="/SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine">SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체</a></li>
+                                            <li><a href="/UseExternalSetting07-Profile">SpringBoot - 외부설정과 프로필2 (1) - 외부 설정 사용 - @Profile</a></li>
                                         
                                     
                                   
@@ -354,8 +333,12 @@ Mac : printenv
                                     
                                         
                                         
-                                            <li><a href="/SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate">SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리</a></li>
+                                            <li><a href="/UseExternalSetting06-YAML">SpringBoot - 외부설정과 프로필2 (6) - 외부 설정 사용 - YAML</a></li>
                                         
+                                    
+                                  
+                                
+                                  
                                     
                                   
                                 
@@ -363,14 +346,7 @@ Mac : printenv
                                     
                                         
                                         
-                                            <li><a href="/SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile">SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
+                                            <li><a href="/UseExternalSetting04-ConfigurationPropertiesConstructor">SpringBoot - 외부설정과 프로필2 (4) - 외부 설정 사용 - @ConfigurationProperties 생성자</a></li>
                                         
                                     
                                   
@@ -404,6 +380,11 @@ Mac : printenv
                                   
                                 
                                   
+                                
+                                  
+                                    
+                                        
+                                        
                                     
                                   
                                 
@@ -412,6 +393,57 @@ Mac : printenv
                                         
                                         
                                     
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
                                   
                                 
                                   
@@ -421,7 +453,7 @@ Mac : printenv
                         <footer class="read-next-card-footer">
                             <a href="/tag/springboot/">
                                 
-                                    See all 9 posts  →
+                                    See all 16 posts  →
                                 
                             </a>
                         </footer>
@@ -435,12 +467,12 @@ Mac : printenv
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty">
+            <a class="post-card-image-link" href="/UseExternalSetting06-YAML">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/post-background-animal_chara_radio_penguin.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty">
+            <a class="post-card-content-link" href="/UseExternalSetting06-YAML">
                 <header class="post-card-header">
                     
                         
@@ -450,11 +482,11 @@ Mac : printenv
                         
                     
 
-                    <h2 class="post-card-title">SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성</h2>
+                    <h2 class="post-card-title">SpringBoot - 외부설정과 프로필2 (6) - 외부 설정 사용 - YAML</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과</p>
+                        <p>Spring Boot 외부설정과 프로필2 (1) 외부 설정 사용 - Environment (2) 외부 설정 사용 - @Value (3) 외부 설정 사용 - @ConfigurationProperties 시작 (4) 외부 설정 사용 - @ConfigurationProperties 생성자 (5) 외부 설정</p>
                     
                 </section>
             </a>
@@ -487,12 +519,12 @@ Mac : printenv
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro">
+            <a class="post-card-image-link" href="/UseExternalSetting04-ConfigurationPropertiesConstructor">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/post-background-animal_chara_radio_penguin.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro">
+            <a class="post-card-content-link" href="/UseExternalSetting04-ConfigurationPropertiesConstructor">
                 <header class="post-card-header">
                     
                         
@@ -502,11 +534,11 @@ Mac : printenv
                         
                     
 
-                    <h2 class="post-card-title">Spring Boot - 외부설정과 프로필(1) 외부 설정이란?</h2>
+                    <h2 class="post-card-title">SpringBoot - 외부설정과 프로필2 (4) - 외부 설정 사용 - @ConfigurationProperties 생성자</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>Spring Boot 외부설정과 프로필1 SpringBoot - 외부설정과 프로필(1) 외부 설정이란? SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수 SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성 SpringBoot - 외부설정과</p>
+                        <p>Spring Boot 외부설정과 프로필2 (1) 외부 설정 사용 - Environment (2) 외부 설정 사용 - @Value (3) 외부 설정 사용 - @ConfigurationProperties 시작 (4) 외부 설정 사용 - @ConfigurationProperties 생성자 (5) 외부 설정</p>
                     
                 </section>
             </a>
@@ -546,18 +578,18 @@ Mac : printenv
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수</div>
+    <div class="floating-header-title">SpringBoot - 외부설정과 프로필2 (5) - 외부 설정 사용 - @ConfigurationProperties 검증</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=SpringBoot+-+%EC%99%B8%EB%B6%80%EC%84%A4%EC%A0%95%EA%B3%BC+%ED%94%84%EB%A1%9C%ED%95%84%282%29+%EC%99%B8%EB%B6%80+%EC%84%A4%EC%A0%95+-+OS+%ED%99%98%EA%B2%BD+%EB%B3%80%EC%88%98&amp;url=https://stay4u.github.ioSpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=SpringBoot+-+%EC%99%B8%EB%B6%80%EC%84%A4%EC%A0%95%EA%B3%BC+%ED%94%84%EB%A1%9C%ED%95%842+%285%29+-+%EC%99%B8%EB%B6%80+%EC%84%A4%EC%A0%95+%EC%82%AC%EC%9A%A9+-+%40ConfigurationProperties+%EA%B2%80%EC%A6%9D&amp;url=https://stay4u.github.ioUseExternalSetting05-ConfigurationPropertiesVerification"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://stay4u.github.ioSpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://stay4u.github.ioUseExternalSetting05-ConfigurationPropertiesVerification"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

@@ -8,33 +8,220 @@
     
       
       <item>
-        <title>SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체</title>
+        <title>SpringBoot - 외부설정과 프로필2 (1) - 외부 설정 사용 - @Profile</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필2&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting01-Environment&quot;&gt;(1) 외부 설정 사용 - Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting02-Value&quot;&gt;(2) 외부 설정 사용 - @Value&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting03-ConfigurationPropertiesStart&quot;&gt;(3) 외부 설정 사용 - @ConfigurationProperties 시작&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting04-ConfigurationPropertiesConstructor&quot;&gt;(4) 외부 설정 사용 - @ConfigurationProperties 생성자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting05-ConfigurationPropertiesVerification&quot;&gt;(5) 외부 설정 사용 - @ConfigurationProperties 검증&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting06-YAML&quot;&gt;(6) 외부 설정 사용 - YAML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting07-Profile&quot;&gt;(7) 외부 설정 사용 - @Profile&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h1 id=&quot;설정-데이터3---내부-파일-합체&quot;&gt;설정 데이터3 - 내부 파일 합체&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;설정 파일을 각각 분리하여 관리하면 한눈에 전체가 들어오지 않는다.
-스프링에서는 이 단점을 보완하기 위해 물리적인 하나의 파일에서 논리적으로 영역을 구분하는 방법을 제공한다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 06 May 2024 00:00:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/UseExternalSetting07-Profile</link>
+        <guid isPermaLink="true">https://stay4u.github.io/UseExternalSetting07-Profile</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필2 (6) - 외부 설정 사용 - YAML</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필2&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting01-Environment&quot;&gt;(1) 외부 설정 사용 - Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting02-Value&quot;&gt;(2) 외부 설정 사용 - @Value&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting03-ConfigurationPropertiesStart&quot;&gt;(3) 외부 설정 사용 - @ConfigurationProperties 시작&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting04-ConfigurationPropertiesConstructor&quot;&gt;(4) 외부 설정 사용 - @ConfigurationProperties 생성자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting05-ConfigurationPropertiesVerification&quot;&gt;(5) 외부 설정 사용 - @ConfigurationProperties 검증&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting06-YAML&quot;&gt;(6) 외부 설정 사용 - YAML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting07-Profile&quot;&gt;(7) 외부 설정 사용 - @Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 </description>
         
         <pubDate>Sun, 05 May 2024 18:01:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine</guid>
+        https://stay4u.github.io/UseExternalSetting06-YAML</link>
+        <guid isPermaLink="true">https://stay4u.github.io/UseExternalSetting06-YAML</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필2 (5) - 외부 설정 사용 - @ConfigurationProperties 검증</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필2&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting01-Environment&quot;&gt;(1) 외부 설정 사용 - Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting02-Value&quot;&gt;(2) 외부 설정 사용 - @Value&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting03-ConfigurationPropertiesStart&quot;&gt;(3) 외부 설정 사용 - @ConfigurationProperties 시작&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting04-ConfigurationPropertiesConstructor&quot;&gt;(4) 외부 설정 사용 - @ConfigurationProperties 생성자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting05-ConfigurationPropertiesVerification&quot;&gt;(5) 외부 설정 사용 - @ConfigurationProperties 검증&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting06-YAML&quot;&gt;(6) 외부 설정 사용 - YAML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting07-Profile&quot;&gt;(7) 외부 설정 사용 - @Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 05 May 2024 18:01:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/UseExternalSetting05-ConfigurationPropertiesVerification</link>
+        <guid isPermaLink="true">https://stay4u.github.io/UseExternalSetting05-ConfigurationPropertiesVerification</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필2 (4) - 외부 설정 사용 - @ConfigurationProperties 생성자</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필2&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting01-Environment&quot;&gt;(1) 외부 설정 사용 - Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting02-Value&quot;&gt;(2) 외부 설정 사용 - @Value&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting03-ConfigurationPropertiesStart&quot;&gt;(3) 외부 설정 사용 - @ConfigurationProperties 시작&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting04-ConfigurationPropertiesConstructor&quot;&gt;(4) 외부 설정 사용 - @ConfigurationProperties 생성자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting05-ConfigurationPropertiesVerification&quot;&gt;(5) 외부 설정 사용 - @ConfigurationProperties 검증&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting06-YAML&quot;&gt;(6) 외부 설정 사용 - YAML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting07-Profile&quot;&gt;(7) 외부 설정 사용 - @Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 05 May 2024 18:01:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/UseExternalSetting04-ConfigurationPropertiesConstructor</link>
+        <guid isPermaLink="true">https://stay4u.github.io/UseExternalSetting04-ConfigurationPropertiesConstructor</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필2 (3) - 외부 설정 사용 - @ConfigurationProperties 시작</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필2&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting01-Environment&quot;&gt;(1) 외부 설정 사용 - Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting02-Value&quot;&gt;(2) 외부 설정 사용 - @Value&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting03-ConfigurationPropertiesStart&quot;&gt;(3) 외부 설정 사용 - @ConfigurationProperties 시작&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting04-ConfigurationPropertiesConstructor&quot;&gt;(4) 외부 설정 사용 - @ConfigurationProperties 생성자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting05-ConfigurationPropertiesVerification&quot;&gt;(5) 외부 설정 사용 - @ConfigurationProperties 검증&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting06-YAML&quot;&gt;(6) 외부 설정 사용 - YAML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting07-Profile&quot;&gt;(7) 외부 설정 사용 - @Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 05 May 2024 18:01:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/UseExternalSetting03-ConfigurationPropertiesStart</link>
+        <guid isPermaLink="true">https://stay4u.github.io/UseExternalSetting03-ConfigurationPropertiesStart</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필2 (2) - 외부 설정 사용 - @Value</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필2&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting01-Environment&quot;&gt;(1) 외부 설정 사용 - Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting02-Value&quot;&gt;(2) 외부 설정 사용 - @Value&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting03-ConfigurationPropertiesStart&quot;&gt;(3) 외부 설정 사용 - @ConfigurationProperties 시작&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting04-ConfigurationPropertiesConstructor&quot;&gt;(4) 외부 설정 사용 - @ConfigurationProperties 생성자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting05-ConfigurationPropertiesVerification&quot;&gt;(5) 외부 설정 사용 - @ConfigurationProperties 검증&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting06-YAML&quot;&gt;(6) 외부 설정 사용 - YAML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting07-Profile&quot;&gt;(7) 외부 설정 사용 - @Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 05 May 2024 18:01:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/UseExternalSetting02-Value</link>
+        <guid isPermaLink="true">https://stay4u.github.io/UseExternalSetting02-Value</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필2 (1) - 외부 설정 사용 - Environment</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필2&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting01-Environment&quot;&gt;(1) 외부 설정 사용 - Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting02-Value&quot;&gt;(2) 외부 설정 사용 - @Value&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting03-ConfigurationPropertiesStart&quot;&gt;(3) 외부 설정 사용 - @ConfigurationProperties 시작&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting04-ConfigurationPropertiesConstructor&quot;&gt;(4) 외부 설정 사용 - @ConfigurationProperties 생성자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting05-ConfigurationPropertiesVerification&quot;&gt;(5) 외부 설정 사용 - @ConfigurationProperties 검증&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting06-YAML&quot;&gt;(6) 외부 설정 사용 - YAML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting07-Profile&quot;&gt;(7) 외부 설정 사용 - @Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 05 May 2024 18:01:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/UseExternalSetting01-Environment</link>
+        <guid isPermaLink="true">https://stay4u.github.io/UseExternalSetting01-Environment</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 05 May 2024 18:01:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/ExternalSetting10-configData3-InternalFileCombine</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting10-configData3-InternalFileCombine</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필2</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필2&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting01-Environment&quot;&gt;(1) 외부 설정 사용 - Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting02-Value&quot;&gt;(2) 외부 설정 사용 - @Value&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting03-ConfigurationPropertiesStart&quot;&gt;(3) 외부 설정 사용 - @ConfigurationProperties 시작&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting04-ConfigurationPropertiesConstructor&quot;&gt;(4) 외부 설정 사용 - @ConfigurationProperties 생성자&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting05-ConfigurationPropertiesVerification&quot;&gt;(5) 외부 설정 사용 - @ConfigurationProperties 검증&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting06-YAML&quot;&gt;(6) 외부 설정 사용 - YAML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./UseExternalSetting07-Profile&quot;&gt;(7) 외부 설정 사용 - @Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 05 May 2024 18:01:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile2</link>
+        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile2</guid>
       </item>
       
     
@@ -44,26 +231,24 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h1 id=&quot;설정-데이터2---내부-파일-분리&quot;&gt;설정 데이터2 - 내부 파일 분리&lt;/h1&gt;
 
 </description>
         
         <pubDate>Mon, 29 Apr 2024 06:27:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate</guid>
+        https://stay4u.github.io/ExternalSetting09-configData2-InternalFileSeparate</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting09-configData2-InternalFileSeparate</guid>
       </item>
       
     
@@ -73,24 +258,24 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Mon, 29 Apr 2024 06:27:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile</guid>
+        https://stay4u.github.io/ExternalSetting08-configData1-ExternalFile</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting08-configData1-ExternalFile</guid>
       </item>
       
     
@@ -100,24 +285,24 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Mon, 29 Apr 2024 06:27:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate</guid>
+        https://stay4u.github.io/ExternalSetting07-SpringIntegrate</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting07-SpringIntegrate</guid>
       </item>
       
     
@@ -127,24 +312,24 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Mon, 29 Apr 2024 06:27:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot</guid>
+        https://stay4u.github.io/ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot</guid>
       </item>
       
     
@@ -154,24 +339,24 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Mon, 29 Apr 2024 06:27:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments</guid>
+        https://stay4u.github.io/ExternalSetting05-CommandLineOptionArguments</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting05-CommandLineOptionArguments</guid>
       </item>
       
     
@@ -181,24 +366,24 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Thu, 18 Apr 2024 21:28:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments</guid>
+        https://stay4u.github.io/ExternalSetting04-CommandLineArguments</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting04-CommandLineArguments</guid>
       </item>
       
     
@@ -208,24 +393,24 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Wed, 10 Apr 2024 08:37:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty</guid>
+        https://stay4u.github.io/ExternalSetting03-JavaSystemProperty</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting03-JavaSystemProperty</guid>
       </item>
       
     
@@ -235,24 +420,24 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Wed, 10 Apr 2024 08:24:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS</guid>
+        https://stay4u.github.io/ExternalSetting02-OS</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting02-OS</guid>
       </item>
       
     
@@ -262,24 +447,51 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./SpringBoot-ExternalSettingAndProfile1-ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Tue, 09 Apr 2024 22:53:00 +0900</pubDate>
         <link>
-        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro</link>
-        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1-ExternalSetting01-Intro</guid>
+        https://stay4u.github.io/ExternalSetting01-Intro</link>
+        <guid isPermaLink="true">https://stay4u.github.io/ExternalSetting01-Intro</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SpringBoot - 외부설정과 프로필1</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Spring Boot 외부설정과 프로필1&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting01-Intro&quot;&gt;SpringBoot - 외부설정과 프로필(1) 외부 설정이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting02-OS&quot;&gt;SpringBoot - 외부설정과 프로필(2) 외부 설정 - OS 환경 변수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting03-JavaSystemProperty&quot;&gt;SpringBoot - 외부설정과 프로필(3) 외부 설정 - 자바 시스템 속성&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting04-CommandLineArguments&quot;&gt;SpringBoot - 외부설정과 프로필(4) 외부 설정 - 커맨드 라인 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting05-CommandLineOptionArguments&quot;&gt;SpringBoot - 외부설정과 프로필(5) 외부 설정 - 커맨드 라인 옵션 인수&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting06-CommandLineOptionArgumentsAndSpringBoot&quot;&gt;SpringBoot - 외부설정과 프로필(6) 외부 설정 - 커맨드 라인 옵션 인수와 스프링 부트&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting07-SpringIntegrate&quot;&gt;SpringBoot - 외부설정과 프로필(7) 외부 설정 - 스프링 통합&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting08-configData1-ExternalFile&quot;&gt;SpringBoot - 외부설정과 프로필(8) 외부 설정 - 설정 데이터1 - 외부 파일&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting09-configData2-InternalFileSeparate&quot;&gt;SpringBoot - 외부설정과 프로필(9) 외부 설정 - 설정 데이터2 - 내부 파일 분리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./ExternalSetting10-configData3-InternalFileCombine&quot;&gt;SpringBoot - 외부설정과 프로필(10) 외부 설정 - 설정 데이터3 - 내부 파일 합체&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Tue, 09 Apr 2024 22:53:00 +0900</pubDate>
+        <link>
+        https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1</link>
+        <guid isPermaLink="true">https://stay4u.github.io/SpringBoot-ExternalSettingAndProfile1</guid>
       </item>
       
     
